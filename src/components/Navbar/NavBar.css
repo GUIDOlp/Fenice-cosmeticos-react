@@ -1,0 +1,55 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(58, 55, 55);
+}
+.logo{
+    width: 150px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.menu li{
+    padding: 15px;
+}
+.menu li a{
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+#navbarScrollingDropdown{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+#navbarScrollingDropdown:hover{
+    background-color: rgb(111, 111, 138);
+    padding: 5px 5px;
+}
+.menu li a:hover{
+    background-color: rgb(111, 111, 138);
+    padding: 5px 5px;
+}
+.contenedorCarrito{
+    display: flex;
+    align-items: center;
+}
+.carrito{
+    font-size: 40px;
+    margin: 5px;
+    color: rgb(223, 214, 214);
+    cursor: pointer;
+}
+.contenedorCarrito span{
+    font-size: 25px;
+}
+
+
+
+/* Media Queries */
