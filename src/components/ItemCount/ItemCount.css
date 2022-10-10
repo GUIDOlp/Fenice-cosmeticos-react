@@ -1,0 +1,18 @@
+
+.contador{
+    width: fit-content;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    margin-top: -10px;
+ }
+ 
+ .contenedorBotones{
+    display: flex;
+    justify-content: space-between;
+ }
+ 
+ .agregarCarrito{
+    margin-top: 15px; 
+    margin-bottom: 15px;
+ }

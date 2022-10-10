@@ -1,0 +1,42 @@
+.contenedorContacto p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.contenedorContacto img{
+    width: 35px;
+}
+
+.contenedorContacto h3{
+    font-size: 25px;
+    margin-left: 20px;
+    color: black;
+    text-align: center;
+}
+
+.tarjeta-contacto{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(84, 80, 80);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.contenedorContacto .contacto{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.contenedorContacto .botonEnviar-contacto {
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+}
+
+.contenedorContacto .form-control{
+    margin-top: 5px;
+}
+
+ .contenedorContacto .botonEnviar-contacto {
+    margin-top: 5px;
+ }

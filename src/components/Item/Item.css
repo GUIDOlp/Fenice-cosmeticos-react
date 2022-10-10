@@ -1,0 +1,62 @@
+.contenedor-cards{
+   float: left;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.card{ 
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: crimson;
+}
+
+.image-titulo{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    background-color: rgb(202, 177, 177);
+}
+.image{
+    width: 250px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.image-precio{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: blue;
+    font-weight: 700;
+    text-align: center;
+}
+
+.verDetalles{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: grey;
+    color: white;
+    font-size: 1.2rem;
+}
+.verDetalles:hover{
+    color: red;
+}
