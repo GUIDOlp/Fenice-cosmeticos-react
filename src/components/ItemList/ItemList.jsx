@@ -2,8 +2,9 @@ import "./ItemList.css";
 import { Item } from "../Item/Item";
 import React from "react";
 
-export const ItemList= ({ prods= [] }) => {
+export const ItemList= ({ data= [] }) => {
     return(
-       prods.map(arrayProductos => <Item key={arrayProductos.id} item={arrayProductos}/>)
+       data.map(productos => <Item key={productos.id} 
+        info={productos}/>)
     )
 }

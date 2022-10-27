@@ -1,9 +1,21 @@
 import "./Contacto.css";
-// import { Link } from "react-router-dom";
-
+import swal from "sweetalert2";
 
 
 export const Contacto= ()=> {
+
+    const enviarForm= (event)=> {
+    event.preventDefault();
+    console.log("formulario enviado")
+    swal.fire ({
+       title: "Gracias por contactarnos.",
+        icon: "success",
+        width: 450,
+        timer: 1500,
+        toast: true,
+    })
+    }
+    
     return(
         <>
         <div className="contenedorContacto">
@@ -11,19 +23,19 @@ export const Contacto= ()=> {
         <h3><u>Contacto</u></h3>       
        <div className="d-flex justify-content-center">
        <div className="tarjeta-contacto col-sm-6 p-3">
-       <form action="">
+       <form onSubmit={enviarForm} action="">
         <div className="mb-2">
-        <label className="contacto" for="Nombre">Nombre</label>
+        <label className="contacto" htmlFor="Nombre">Nombre</label>
         <br/>
         <input className="form-control" type="text" name="nombre" id="nombre" placeholder="nombre"/>
         </div>
         <div className="mb-2"> 
-        <label className="contacto" for="Nombre">Apellido</label>
+        <label className="contacto" htmlFor="Nombre">Apellido</label>
         <br/>
         <input className="form-control" type="text" name="apellido" id="apellido" placeholder="apellido"/>
         </div>
         <div className="mb-2"> 
-        <label className="contacto" for="Nombre">Email</label>
+        <label className="contacto" htmlFor="Nombre">Email</label>
         <br/>
         <input className="form-control" type="text" name="email" id="email" placeholder="email"/>
         </div>

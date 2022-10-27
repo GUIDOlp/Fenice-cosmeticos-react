@@ -1,3 +1,10 @@
 .contenedorCarrito{
     margin-right: 15px;
+    position: relative;
+    top: 5px;
+}
+
+.number-carrito{
+    color: red;
+    font-weight: 600;
 }

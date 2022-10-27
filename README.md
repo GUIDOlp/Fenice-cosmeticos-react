@@ -2,6 +2,30 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Bienvenido al Repositorio oficial de Fenice Cosmeticos!!
+
+### Introduccion:
+"Fenice Cosmeticos" es un e-commerce de productos cosmeticos solidos, naturales y organicos. Pretendemos concientizar a la sociedad en general acerca de la importancia que conlleva el uso de la cosmetica natural, no solo para el cuidado de nuestro cuerpo, sino tambien en pos de la proteción del medio ambiente. 
+Nuestra propuesta de valor, consiste en un cosmético sólido, natural y sustentable, con envase plantable, atendiendo asi a la necesidad del cliente de poder cuidar su piel y/o cumplir propios rangos de belleza, con un producto que no solo esté libre de derivados del petróleo y de polimeros, sino que es ampliamente benéfico para la piel, distribuido en un envase biodegradable.
+___
+### Nuestros Productos:
+- Acondicionador
+- Corrector de Ojeras
+- Crema facial
+- Delineador de Ojos
+- Jabon de tocador
+- Labiales
+- Perfumes
+- Shampoo
+- Sombra de ojos
+
+___
+### Enlaces:
+[Link a nuestra pagina de Instagram] (https://www.instagram.com/fenice.coc/)
+___
+### Imagenes:
+![nuestro logo] (https://i.ibb.co/Fkrj6dY/logo-min.png)
+
 ## Available Scripts
 
 In the project directory, you can run:

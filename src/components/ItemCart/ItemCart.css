@@ -1,0 +1,30 @@
+.itemCart{
+    display: flex;
+    border-bottom: 1px solid gray;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    max-width: 400px;
+}
+
+.itemCart img{
+    width: 220px;
+
+}
+
+.cart-descripcion{
+   margin: 10px;
+   font-weight: 500;
+}
+
+/* Media Querie */
+
+@media (max-width: 390px) {
+    .itemCart{
+    max-width: 350px;
+    }
+    
+    .itemCart img{
+        width: 160px;
+    }
+}

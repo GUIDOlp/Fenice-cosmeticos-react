@@ -1,35 +1,52 @@
 import "./ItemListContainer.css";
 import React,{ useEffect, useState } from "react";
-import { arrayProductos } from "../../baseDeDatos/baseDeDatos";
 import { ItemList } from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
+import { datosFirebase } from "../../Utils/Firebase";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import ClipLoader from "react-spinners/ClipLoader";
 
 export const ItemListContainer =()=> {
   
-  const [prods, setProds]= useState([]);
+  const [data, setData]= useState([]);
 
-  const {categoriasId} = useParams();
+  const[loading, setLoading]= useState(true);
 
-  useEffect(()=>{
-    const obtenerProductos= new Promise((resolve, reject) =>{
-      setTimeout(() => {
-        resolve(arrayProductos)
-      }, 1000);
-    }); 
+  const { categoriaId } = useParams();
+  console.log(useParams())
 
-    if (categoriasId) {
-      obtenerProductos.then(response => setProds(response.filter(arrayProductos => 
-        arrayProductos.categoria=== categoriasId)));  
-    } else {
-      obtenerProductos.then(response => setProds(response))
+// obtener documentos aplicando filtros en la base de datos
+useEffect (()=> {
+const queryRef= categoriaId ? query(collection(datosFirebase, "productos"), where("categoria", "==", categoriaId)) : collection(datosFirebase, "productos");
+getDocs(queryRef).then((res) => {
+  const results= res.docs;
+  const docs= results.map(doc => {
+    return{
+      ...doc.data(),
+      id:doc.id
     }
-  },[categoriasId])
-  
-  return(
+  })
+  setData(docs);
+  setLoading(true);
+  setTimeout(() => {
+    setLoading(false)
+  }, 1000);
+});
+
+},[categoriaId])
+
+return(
       <>
       <div className="contenedorProductos">
-          <ItemList prods={prods}/>
+        {
+          loading?
+          <ClipLoader className="load" color={"#D0021B"} loading={loading} size={70}/>
+          :
+          <ItemList data={data}/>
+        }
       </div>
       </>
     )
 }
+
+  

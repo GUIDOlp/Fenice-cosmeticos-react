@@ -8,7 +8,7 @@ import perfumes from "../img/perfumes.jpg";
 import shampoo from "../img/shampoo.jpg";
 import sombraDeOjos from "../img/sombra de ojos.jpg";
 
-export const arrayProductos = [
+export const productos = [
     {id: 1, titulo: "Acondicionador", precio: 1600, pictureUrl: acondicionador,
     categoria: "productosparaelcabello"},
     {id: 2, titulo: "Corrector de ojeras", precio: 1000, pictureUrl: corrector,

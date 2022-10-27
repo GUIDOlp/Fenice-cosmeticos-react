@@ -60,3 +60,16 @@
 .verDetalles:hover{
     color: red;
 }
+
+/* Media Queries */
+
+@media (max-width: 660px) {
+
+    .image{
+        width: 200px;
+    }
+    .image-titulo{
+        margin-left: 47px;
+        margin-right: 45px;
+    }
+}

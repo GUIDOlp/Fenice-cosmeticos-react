@@ -1,0 +1,44 @@
+.contenido-cart{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+.contenedor-cart{
+    display: flex;
+}
+
+.comprar{
+    color: blue;
+    font-weight: 500;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    padding: 0 5px;
+}
+
+.comprar:hover{
+    color: red;
+}
+
+.contenedor-cart p{
+    font-size: 1.5rem;
+}
+
+.total{
+    margin-left: 30px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.boton-compra{
+    width: 250px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.boton-compra:hover{
+    color: red;
+}
