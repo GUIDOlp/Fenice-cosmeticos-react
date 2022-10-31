@@ -8,28 +8,28 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 export const ItemListContainer =()=> {
   
-  const [data, setData]= useState([]);
+const [data, setData]= useState([]);
 
-  const[loading, setLoading]= useState(true);
+const[loading, setLoading]= useState(true);
 
-  const { categoriaId } = useParams();
-  console.log(useParams())
+const { categoriaId } = useParams();
+console.log(useParams())
 
 // obtener documentos aplicando filtros en la base de datos
 useEffect (()=> {
 const queryRef= categoriaId ? query(collection(datosFirebase, "productos"), where("categoria", "==", categoriaId)) : collection(datosFirebase, "productos");
 getDocs(queryRef).then((res) => {
-  const results= res.docs;
-  const docs= results.map(doc => {
-    return{
-      ...doc.data(),
-      id:doc.id
+const results= res.docs;
+const docs= results.map(doc => {
+return{
+...doc.data(),
+id:doc.id
     }
-  })
-  setData(docs);
-  setLoading(true);
-  setTimeout(() => {
-    setLoading(false)
+})
+setData(docs);
+setLoading(true);
+setTimeout(() => {
+setLoading(false)
   }, 1000);
 });
 

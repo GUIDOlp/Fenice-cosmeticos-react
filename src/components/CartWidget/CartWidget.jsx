@@ -6,14 +6,14 @@ import "./CartWidget.css";
 
 export const CartWidget = () => {    
     
-    const{productosTotales}= useCartContext();
+const{productosTotales}= useCartContext();
 
-    return (
-        <>
-        <div className='contenedorCarrito'>
-        <FontAwesomeIcon icon={faCartShopping} className="carrito"/>
-        <span className='number-carrito'>{productosTotales() || ''}</span>
-        </div>
-        </>
-    )
-}
+return (
+    <>
+     <div className='contenedorCarrito'>
+     <FontAwesomeIcon icon={faCartShopping} className="carrito"/>
+     <span className='number-carrito'>{productosTotales() || ''}</span>
+     </div>
+    </>
+ )
+};

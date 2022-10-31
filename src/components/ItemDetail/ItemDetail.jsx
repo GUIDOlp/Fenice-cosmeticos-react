@@ -27,7 +27,7 @@ export const ItemDetail= ({data}) => {
     const ref= doc(datosFirebase, "productos", detallesId);
     const res= await getDoc(ref);
     console.log(res);
-    const descriptionProduct= {...res.descripcion(), id: res.id}
+    const descriptionProduct= {...res.data(), id: res.id}
     setDescripcion(descriptionProduct);    
     }
     description();

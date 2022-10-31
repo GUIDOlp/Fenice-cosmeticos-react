@@ -24,21 +24,93 @@
     font-size: 1.5rem;
 }
 
-.total{
-    margin-left: 30px;
+.contenedor-compra{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contacto-compra{
+    border: 1px solid rgb(84, 80, 80);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width: 350px;
+ 
+}
+
+.contacto-compra .contacto{
+    position: relative;
+    left: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contacto-compra .form-control{
+    width: 200px;
+    margin-left: 20px;
+    margin: auto;
+}
+
+.medios-pago{
+    text-align: center;
     font-size: 1.2rem;
     color: black;
     font-weight: 600;
 }
 
-.boton-compra{
-    width: 250px;
+.mediosDepago{
+    display: flex;
+    padding: 5px 20px;
+}
+
+.pago-credito{
+    text-align: center;
+}
+
+.total{
     margin-left: 30px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.boton-compra{
+    width: 200px;
     margin-bottom: 30px;
     background-color: blueviolet;
     color: white;
+    position: relative;
+    left: 20%;
 }
 
 .boton-compra:hover{
     color: red;
+}
+
+/*  Media Querie */
+
+@media (max-width: 750px) {
+    .contenedor-compra{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .contacto-compra{
+        margin-right: auto;
+        width: 250px;
+    }
+    .boton-compra{
+        position: relative;
+        left: 10%;
+    }
+    .mediosDepago{
+        display: block;
+    }
+    .pago-credito{
+       position: relative;
+       right: 15px;
+    }
 }

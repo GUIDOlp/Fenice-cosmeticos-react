@@ -1,6 +1,5 @@
 .itemCart{
     display: flex;
-    border-bottom: 1px solid gray;
     margin-left: 30px;
     margin-bottom: 30px;
     margin-top: 30px;
@@ -8,8 +7,8 @@
 }
 
 .itemCart img{
-    width: 220px;
-
+    width: 240px;
+    height: 250px;
 }
 
 .cart-descripcion{
