@@ -15,9 +15,7 @@ const sumar= ()=> {
 useEffect (()=>{
  setContador(parseInt(initial))
  console.log("useEffect called");
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-
-},[])
+},[initial])
     return(
         <>
       <div className="contador">

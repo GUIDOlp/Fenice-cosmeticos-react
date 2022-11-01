@@ -22,7 +22,7 @@ const error= {};
 //  declaramos expresiones regulares para la validacion del formulario
 const regexName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 const regexEmail = /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
-const regexTelefono= /^[+]*[(]?[0-9-\s\.]+$/gm;
+const regexTelefono= /^[+]*[(]?[0-9-\s]+$/gm;
 
 //  validamos que los campos de los inputs no esten vacios
   if(!form.name.trim()) {
