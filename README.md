@@ -37,14 +37,14 @@ ___
 .Mostrar un numero de orden por consola por compra finalizada
 
 ### Demo:
-Versión demo del proyecto aquí(agregar enlace)
+Versión demo del proyecto aquí (https://fenicecosmeticos.netlify.app/)
 
 ### Construido con:
-.HTML5
-.CSS3
-.JAVASCRIPT
-.REACTJS
-.FIREBASE
+-HTML5
+-CSS3
+-JAVASCRIPT
+-REACTJS
+-FIREBASE
 
 ### Librerias utilizadas:
 | Nombre | Descripcion |
