@@ -40,11 +40,11 @@ ___
 Versión demo del proyecto aquí (https://fenicecosmeticos.netlify.app/)
 
 ### Construido con:
--HTML5
--CSS3
--JAVASCRIPT
--REACTJS
--FIREBASE
+- HTML5
+- CSS3
+- JAVASCRIPT
+- REACTJS
+- FIREBASE
 
 ### Librerias utilizadas:
 | Nombre | Descripcion |
